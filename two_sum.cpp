@@ -12,12 +12,12 @@ public:
         {
             if ((nums[i]+nums[j])> target)
             {
-                j = j -1;
+                j=j-1;
 
             }
             if ((nums[i]+nums[j])< target)
             {
-                j = j -1;
+                i=i+1;
 
             }
             if ((nums[i]+nums[j])== target)
@@ -28,4 +28,5 @@ public:
         }
         return{0};
     }
+
 };
